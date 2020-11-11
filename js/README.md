@@ -8,22 +8,21 @@
 
 ## General info
 
-This project is simple Lorem ipsum dolor generator.
+This repository is for my trainings and project in a creer path affored by CodeCademy.
 
 ## Technologies
 
 Project is created with:
 
-    * Lorem version: 12.3
-    * Ipsum version: 2.33
-    * Ament library version: 999
+    * node.js version: 15.0.1
+    * npm     version: 7.0.3
 
 ## Setup
 
 To run this project, install it locally using npm:
 
 ```bash
-cd ../lorem
+cd ..
 npm install
 npm start
 ```
