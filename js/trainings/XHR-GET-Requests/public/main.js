@@ -14,7 +14,7 @@ const getSuggestions = () => {
   const wordQuery = inputField.value;
   const topicQuery = topicField.value;
   const endpoint = `${url}${queryParams}${wordQuery}${additionalParams}${topicQuery}`;
-  
+
   const xhr = new XMLHttpRequest();
   xhr.responseType = 'json';
 
@@ -23,7 +23,7 @@ const getSuggestions = () => {
       renderResponse(xhr.response);
     }
   }
-  
+
   xhr.open('GET', endpoint);
   xhr.send();
 }
@@ -31,7 +31,7 @@ const getSuggestions = () => {
 // Clear previous results and display results to webpage
 const displaySuggestions = (event) => {
   event.preventDefault();
-  while(responseField.firstChild){
+  while (responseField.firstChild) {
     responseField.removeChild(responseField.firstChild);
   }
   getSuggestions();
